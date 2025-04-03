@@ -2,7 +2,7 @@
 
 <!-- ERROR 1: Root element name changed -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="YOUR_HOSTED_XSD_URL_HERE/Hotels.xsd">
+        xsi:noNamespaceSchemaLocation="https://asing508.github.io/cse445_a4/Hotels.xsd">
 
 	<!-- Hotel 1: Example from Figure 1 -->
 	<Hotel Rating="4.2">
