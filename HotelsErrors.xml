@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ERROR 1: Root element name changed -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="YOUR_HOSTED_XSD_URL_HERE/Hotels.xsd">
+
+	<!-- Hotel 1: Example from Figure 1 -->
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 2 -->
+	<!-- ERROR 2: Missing required attribute 'NearestAirport' from Address -->
+	<Hotel Rating="4.4">
+		<Name>Caesars Palace Las Vegas</Name>
+		<Phone>866-227-5938</Phone>
+		<Phone>702-731-7110</Phone>
+		<Address> <!-- Removed NearestAirport attribute -->
+			<Number>3570</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Paradise</City>
+			<State>NV</State>
+			<Zip>89109</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 3 (No Rating) -->
+	<Hotel>
+		<!-- No Rating attribute -->
+		<Name>The Plaza</Name>
+		<Phone>212-759-3000</Phone>
+		<Address NearestAirport="La Guardia Airport">
+			<Number>768</Number>
+			<Street>5th Ave</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10019</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 4 -->
+	<!-- ERROR 3: Missing Phone element -->
+	<Hotel Rating="4.1">
+		<Name>Silversmith Hotel Chicago Downtown</Name>
+		<!-- Phone element removed -->
+		<Address NearestAirport="Chicago Midway International Airport">
+			<Number>10</Number>
+			<Street>S Wabash Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60603</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 5 (No Rating) -->
+	<Hotel>
+		<Name>Melrose Georgetown Hotel</Name>
+		<Phone>202-955-6400</Phone>
+		<Address NearestAirport="Ronald Reagan Washington National Airport">
+			<Number>2430</Number>
+			<Street>Pennsylvania Avenue NW</Street>
+			<City>Washington</City>
+			<State>DC</State>
+			<Zip>20037</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 6 -->
+	<!-- ERROR 4: Address element has no closing tag -->
+	<Hotel Rating="3.8">
+		<Name>The Balfour Hotel</Name>
+		<Phone>305-538-1055</Phone>
+		<Address NearestAirport="MIA">
+			<Number>350</Number>
+			<Street>Ocean Dr</Street>
+			<City>Miami Beach</City>
+			<State>FL</State>
+			<Zip>33139</Zip>
+	</Hotel>
+
+	<!-- Hotel 7 (No Rating) -->
+	<Hotel>
+		<Name>Rosen Inn International</Name>
+		<Phone>407-996-1600</Phone>
+		<Phone>800-825-7600</Phone>
+		<Address NearestAirport="Orlando International Airport">
+			<Number>7600</Number>
+			<Street>International Dr</Street>
+			<City>Orlando</City>
+			<State>FL</State>
+			<Zip>32819</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 8 -->
+	<!-- ERROR 5: Two Name elements provided -->
+	<Hotel Rating="4.4">
+		<Name>Sheraton Grand Nashville Downtown</Name>
+		<Name>Sheraton Hotel</Name> <!-- Extra Name element -->
+		<Phone>615-259-2000</Phone>
+		<Address NearestAirport="Nashville International Airport">
+			<Number>623</Number>
+			<Street>Union St</Street>
+			<City>Nashville</City>
+			<State>TN</State>
+			<Zip>37219</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 9 (No Rating) -->
+	<Hotel>
+		<Name>The Royal Sonesta New Orleans</Name>
+		<Phone>504-586-0300</Phone>
+		<Address NearestAirport="Louis Armstrong International Airport">
+			<Number>300</Number>
+			<Street>Bourbon St</Street>
+			<City>New Orleans</City>
+			<State>LA</State>
+			<Zip>70130</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 10 -->
+	<Hotel Rating="3.5">
+		<Name>Hyatt Regency Savannah</Name>
+		<Phone>912-238-1234</Phone>
+		<Phone>912-944-3678</Phone>
+		<Address NearestAirport="SAV">
+			<Number>2</Number>
+			<Street>W Bay St</Street>
+			<City>Savannah</City>
+			<State>GA</State>
+			<Zip>31401</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
