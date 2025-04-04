@@ -143,7 +143,7 @@
 		<Name>The Revolution Hotel</Name>
 		<Phone>617-848-9200</Phone>
 		<Phone>800-591-2872</Phone>
-		<Address NearestAirport="SAV">
+		<Address NearestAirport="Boston Logan International Airport">
 			<Number>40</Number>
 			<Street>Berkeley St</Street>
 			<City>Boston</City>
