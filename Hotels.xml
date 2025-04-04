@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Update the schemaLocation value with your actual hosted XSD URL later -->
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://asing508.github.io/cse445_a4/Hotels.xsd">
@@ -135,6 +135,20 @@
 			<City>Savannah</City>
 			<State>GA</State>
 			<Zip>31401</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 11 -->
+	<Hotel Rating="4.4">
+		<Name>The Revolution Hotel</Name>
+		<Phone>617-848-9200</Phone>
+		<Phone>800-591-2872</Phone>
+		<Address NearestAirport="SAV">
+			<Number>40</Number>
+			<Street>Berkeley St</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02116</Zip>
 		</Address>
 	</Hotel>
 	
